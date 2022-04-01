@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Airline Live Chat APP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script>
+    $(document).on("mobileinit", function(){
+      $.mobile.ajaxEnabled=false;
+      $.mobile.loadingMessage = false;
+    });            
+  </script>
+  <script src="https://code.jquery.com/mobile/1.5.0-rc1/jquery.mobile-1.5.0-rc1.min.js" integrity="sha256-c3VbCrdCtTHmXYAuxRT4D0Cy5VC/0zBnXVRIvJiV9xo="  crossorigin="anonymous"></script>
+  
+  
+</head>
+<body>
+  <header data-role="header">
+    <div class="menu cross menu">
+      <label>
+        <input type="checkbox">
+        <svg viewBox="10 10 80 80" xmlns="http://www.w3.org/2000/svg">
+          <path class="line--1 line--debug" d="M0 70l28-28c2-2 2-2 7-2h64"></path><path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+          <path class="line--2 line--debug" d="M0 50h99"></path><path class="line--2" d="M0 50h99"></path>
+          <path class="line--3 line--debug" d="M0 30l28 28c2 2 2 2 7 2h64"></path><path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+        </svg>
+      </label>
+
+      <div class="refresh">
+        <img src="./assets/img/fi_rotate-ccw.png" alt="Refresh Image">     
+      </div>
+    </div>    
+  </header>
+
+  <div data-role="page" id="main">
+    <div id="messages-box">
+      <div class="support">
+        <img src="assets/img/dan.png" alt="Dan">
+        <span class="title">Dan</span>
+        <span class="des">Your Claim Guide</span>
+      </div>
+      <div class="messages">
+        <div class="message-box">
+          <span class="message supporting greeting">Hi Eytan👋 a pleasure to meet you. I'm here to help you with this claim</span>
+        </div>
+      </div>
+
+      <ul id="support-questions" class="support-items list"></ul>
+    </div>
+  </div>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
